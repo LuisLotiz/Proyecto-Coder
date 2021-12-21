@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    background-color: #5d4436;
+    display: flex;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #cd7a52;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 20px;
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #b3aeab;
+    outline: none;
+}
+
+.search-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #cd7a52;
+    border: 1px solid #cd7a52;
+    color: #ffffff;
+}
+
+.search-button:hover {
+    background-color: #c95b24;
+    border: 1px solid #c95b24;
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    background-color: #5d4436;
+    height: 35px;
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "main main main main main main"
+        "section section section section section section "
+        "footer footer footer footer footer footer ";
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.right-side-header {
+    display: grid;
+}
+
+.search-menu {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.card {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-promo {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 20px;
+}
+.detail-menu-card {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin: 30px 15px;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-description {
+    padding: 10px;
+}
+
+.link-clicked {
+    text-decoration: underline;
+}
+
+.main-menu {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 16px;
+}
+.menu {
+    grid-area: section;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-text {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 30px;
+}
+.contact-section-container {
+    display: grid;
+    justify-items: center;
+}
+
+.contact-form {
+    display: grid;
+    border: 1px solid #b3aeab;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 50px;
+    height: 380px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-input {
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #b3aeab;
+}
+
+.contact-textarea {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #b3aeab;
+}
+
+.contact-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 30%;
+    background-color: #cd7a52;
+    border: 1px solid #cd7a52;
+    color: #ffffff;
+}
+
+.contact-button:hover {
+    background-color: #c95b24;
+    border: 1px solid #c95b24;
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.section-1 {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+
+.main-img {
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+}
+.div-logo {
+    width: 56%;
+    display: flex;
+    justify-content: end;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.section-main-img {
+    width: 100%;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-promo {
+    display: grid;
+    justify-items: center;
+    grid-area: main;
+}
+.banner {
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.banner-2 {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.banner-text-2 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.banner-text {
+    margin-top: 20px;
+    width: 60%;
+}
+
+.social {
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.social-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-link {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1020px) {
+    .section-1 {
+        display: grid;
+        justify-items: center;
+    }
+
+    .section-main-img {
+        width: 100%;
+        grid-area: main;
+        display: grid;
+
+        justify-items: center;
+    }
+
+    .card-promo {
+        width: 70%;
+    }
+
+    .banner {
+        width: 70%;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .menu {
+        display: grid;
+
+        justify-items: center;
+    }
+
+    .detail-menu-card {
+        width: 80%;
+        margin-right: 20px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .social-section {
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
+    .card {
+        width: 70%;
+    }
+    .about-us-text {
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-img {
+        display: none;
+    }
+
+    .div-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-menu {
+        margin-bottom: 15px;
+    }
+
+    .search-input {
+        margin: 0;
+    }
+
+    .search-button {
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side-header {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
